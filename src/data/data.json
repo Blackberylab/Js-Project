@@ -1,0 +1,185 @@
+{
+  "studioInfo": {
+    "name": "Pulse Motion Dance Studio",
+    "description": "Pulse Motion is a modern dance studio offering group lessons across ballet, hip-hop, latin fusion, and wellness experiences. Our mission is to make dance accessible to everyone while celebrating movement, music, and community.",
+    "highlights": [
+      "Six light-filled studios with sprung floors",
+      "Weekly guest workshops with touring choreographers",
+      "Community showcases every month"
+    ]
+  },
+  "classes": [
+    {
+      "id": "cls-1",
+      "title": "Contemporary Flow",
+      "style": "Contemporary",
+      "level": "Beginner",
+      "date": "2024-07-20T18:00:00",
+      "duration": 75,
+      "spots": 18,
+      "enrolled": 11,
+      "location": "Studio Aurora",
+      "cover": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=60"
+    },
+    {
+      "id": "cls-2",
+      "title": "Latin Fusion Social",
+      "style": "Latin",
+      "level": "Open",
+      "date": "2024-07-21T20:00:00",
+      "duration": 90,
+      "spots": 24,
+      "enrolled": 22,
+      "location": "Rooftop Terrace",
+      "cover": "https://images.unsplash.com/photo-1455717974081-0436a066bb96?auto=format&fit=crop&w=900&q=60"
+    },
+    {
+      "id": "cls-3",
+      "title": "Hip-Hop Foundations",
+      "style": "Hip-Hop",
+      "level": "Beginner",
+      "date": "2024-07-22T17:30:00",
+      "duration": 60,
+      "spots": 20,
+      "enrolled": 16,
+      "location": "Studio Pulse",
+      "cover": "https://images.unsplash.com/photo-1486299267070-83823f5448dd?auto=format&fit=crop&w=900&q=60"
+    },
+    {
+      "id": "cls-4",
+      "title": "Ballet Sculpt",
+      "style": "Ballet",
+      "level": "Intermediate",
+      "date": "2024-07-23T19:00:00",
+      "duration": 70,
+      "spots": 14,
+      "enrolled": 8,
+      "location": "Studio Meridian",
+      "cover": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=900&q=60"
+    },
+    {
+      "id": "cls-5",
+      "title": "Afrobeats Groove",
+      "style": "Afrobeats",
+      "level": "Open",
+      "date": "2024-07-24T20:30:00",
+      "duration": 80,
+      "spots": 26,
+      "enrolled": 19,
+      "location": "Studio Aurora",
+      "cover": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=900&q=60"
+    },
+    {
+      "id": "cls-6",
+      "title": "Mindful Stretch & Breath",
+      "style": "Wellness",
+      "level": "All",
+      "date": "2024-07-25T08:30:00",
+      "duration": 50,
+      "spots": 15,
+      "enrolled": 13,
+      "location": "Sky Loft",
+      "cover": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=900&q=60"
+    },
+    {
+      "id": "cls-7",
+      "title": "Jazz Tech",
+      "style": "Jazz",
+      "level": "Intermediate",
+      "date": "2024-07-26T18:45:00",
+      "duration": 75,
+      "spots": 16,
+      "enrolled": 10,
+      "location": "Studio Pulse",
+      "cover": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=60"
+    },
+    {
+      "id": "cls-8",
+      "title": "K-Pop Choreo",
+      "style": "K-Pop",
+      "level": "Open",
+      "date": "2024-07-27T16:00:00",
+      "duration": 70,
+      "spots": 22,
+      "enrolled": 12,
+      "location": "Studio Neon",
+      "cover": "https://images.unsplash.com/photo-1472653816316-3ad6f10a6592?auto=format&fit=crop&w=900&q=60"
+    },
+    {
+      "id": "cls-9",
+      "title": "House Party",
+      "style": "House",
+      "level": "Advanced",
+      "date": "2024-07-28T21:00:00",
+      "duration": 100,
+      "spots": 30,
+      "enrolled": 25,
+      "location": "Warehouse Room",
+      "cover": "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=900&q=60"
+    },
+    {
+      "id": "cls-10",
+      "title": "Commercial Pop",
+      "style": "Commercial",
+      "level": "Intermediate",
+      "date": "2024-07-29T18:15:00",
+      "duration": 65,
+      "spots": 18,
+      "enrolled": 11,
+      "location": "Studio Aurora",
+      "cover": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=900&q=60"
+    },
+    {
+      "id": "cls-11",
+      "title": "Barre Burn",
+      "style": "Wellness",
+      "level": "All",
+      "date": "2024-07-30T07:30:00",
+      "duration": 55,
+      "spots": 20,
+      "enrolled": 14,
+      "location": "Studio Meridian",
+      "cover": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=900&q=60"
+    },
+    {
+      "id": "cls-12",
+      "title": "Tap Drills",
+      "style": "Tap",
+      "level": "Advanced",
+      "date": "2024-07-31T19:30:00",
+      "duration": 70,
+      "spots": 12,
+      "enrolled": 7,
+      "location": "Studio Pulse",
+      "cover": "https://images.unsplash.com/photo-1437913135140-944c1ee62782?auto=format&fit=crop&w=900&q=60"
+    }
+  ],
+  "events": [
+    {
+      "id": "evt-1",
+      "title": "Summer Gala Showcase",
+      "date": "2024-08-05T19:00:00",
+      "description": "An evening of performances from every company, featuring original choreography and live musicians.",
+      "spots": 120,
+      "enrolled": 96,
+      "location": "Main Theater"
+    },
+    {
+      "id": "evt-2",
+      "title": "Choreography Lab",
+      "date": "2024-08-12T18:30:00",
+      "description": "A collaborative creation session guided by three guest mentors.",
+      "spots": 40,
+      "enrolled": 29,
+      "location": "Studio Aurora"
+    }
+  ],
+  "gallery": [
+    "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=600&q=60",
+    "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=600&q=60",
+    "https://images.unsplash.com/photo-1459478309853-2c33a60058e7?auto=format&fit=crop&w=600&q=60",
+    "https://images.unsplash.com/photo-1460042711893-6d71db5e97a8?auto=format&fit=crop&w=600&q=60",
+    "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=600&q=60",
+    "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=600&q=60"
+  ]
+}
