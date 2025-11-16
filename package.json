@@ -1,7 +1,14 @@
 {
+  "name": "dance-studio",
+  "version": "1.0.0",
+  "description": "Dance studio schedule and enrollment web app",
   "scripts": {
     "postinstall": "cd ./test && npm i || true",
     "test": "cd ./test && npm run test",
-    "build": "echo \"Dummy build script for Autocode\""
+    "build": "echo \"Dummy build script for Autocode\"",
+    "compile": "node-sass src/styles/style.scss src/dist/style.css --output-style expanded && node-sass src/styles/style.scss src/dist/style.min.css --output-style compressed && node-sass src/styles/mobile.scss src/dist/mobile.css --output-style expanded"
+  },
+  "devDependencies": {
+    "node-sass": "^9.0.0"
   }
 }

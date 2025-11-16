@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pulse Motion Dance Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/style.css" />
+    <link rel="stylesheet" href="dist/mobile.css" media="(max-width: 768px)" />
+  </head>
+  <body>
+    <header class="hero" aria-label="Studio hero">
+      <div class="hero__slider" aria-live="polite">
+        <button class="hero__control hero__control--prev" aria-label="Previous slide">‹</button>
+        <div class="hero__slides">
+          <div class="hero__slide" data-slide="0">
+            <img
+              src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=1200&q=60"
+              alt="Dancers in a bright studio"
+            />
+            <div class="hero__caption">
+              <p>Over 40 group classes every week</p>
+            </div>
+          </div>
+          <div class="hero__slide" data-slide="1">
+            <img
+              src="https://images.unsplash.com/photo-1437913135140-944c1ee62782?auto=format&fit=crop&w=1200&q=60"
+              alt="Dancer performing on stage"
+            />
+            <div class="hero__caption">
+              <p>Performance showcases every month</p>
+            </div>
+          </div>
+          <div class="hero__slide" data-slide="2">
+            <img
+              src="https://images.unsplash.com/photo-1455717974081-0436a066bb96?auto=format&fit=crop&w=1200&q=60"
+              alt="Dance class social event"
+            />
+            <div class="hero__caption">
+              <p>Community nights & rooftop socials</p>
+            </div>
+          </div>
+        </div>
+        <button class="hero__control hero__control--next" aria-label="Next slide">›</button>
+      </div>
+      <nav class="hero__nav" aria-label="Primary">
+        <ul class="menu">
+          <li class="menu__item">
+            <a href="#about">About</a>
+          </li>
+          <li class="menu__item menu__item--has-children">
+            <a href="#schedule" aria-haspopup="true">Classes</a>
+            <ul class="submenu" aria-label="Class menu">
+              <li><a href="#filters">Filter &amp; search</a></li>
+              <li><a href="#calendar">My calendar</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a href="#events">Events</a>
+          </li>
+          <li class="menu__item">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="breadcrumbs" aria-label="Breadcrumbs">
+        <p>
+          <a href="#about">Home</a>
+          <span aria-hidden="true">›</span>
+          <a href="#schedule">Schedule</a>
+          <span aria-hidden="true">›</span>
+          <span>Enroll</span>
+        </p>
+      </section>
+
+      <section id="about" class="studio">
+        <div class="studio__info">
+          <h1>Pulse Motion Dance Studio</h1>
+          <p class="studio__lead">
+            Discover a vibrant community of movers. Browse our calendar, reserve a
+            limited spot in group classes, and keep track of the events you love.
+          </p>
+          <ul class="studio__highlights" aria-label="Studio highlights"></ul>
+        </div>
+        <div class="studio__stats" aria-live="polite">
+          <article class="stat-card">
+            <h2>Total weekly classes</h2>
+            <p id="stat-total">0</p>
+          </article>
+          <article class="stat-card">
+            <h2>Open seats this week</h2>
+            <p id="stat-open">0</p>
+          </article>
+          <article class="stat-card">
+            <h2>Upcoming events</h2>
+            <p id="stat-events">0</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="filters" class="layout">
+        <aside class="layout__sidebar">
+          <h2>Find your class</h2>
+          <label class="form-control">
+            <span>Search by title</span>
+            <input type="search" id="searchInput" placeholder="e.g. hip-hop" />
+          </label>
+          <label class="form-control">
+            <span>Filter by style</span>
+            <select id="styleFilter">
+              <option value="all">All styles</option>
+            </select>
+          </label>
+          <label class="form-control">
+            <span>Filter by level</span>
+            <select id="levelFilter">
+              <option value="all">All levels</option>
+              <option value="Beginner">Beginner</option>
+              <option value="Intermediate">Intermediate</option>
+              <option value="Advanced">Advanced</option>
+              <option value="Open">Open</option>
+              <option value="All">All</option>
+            </select>
+          </label>
+          <label class="form-control">
+            <span>Sort by</span>
+            <select id="sortSelect">
+              <option value="date">Date</option>
+              <option value="spots">Most seats</option>
+              <option value="title">Title</option>
+            </select>
+          </label>
+        </aside>
+        <article class="layout__content" id="schedule">
+          <header class="layout__header">
+            <h2>Weekly schedule</h2>
+            <p>Each group class shows the total and available seats. Reserve quickly before they sell out.</p>
+          </header>
+          <div id="scheduleList" class="card-grid" aria-live="polite"></div>
+          <div class="pagination" role="navigation" aria-label="Class pagination">
+            <button id="prevPage" class="pagination__button">Prev</button>
+            <span id="pageIndicator" class="pagination__indicator">1</span>
+            <button id="nextPage" class="pagination__button">Next</button>
+          </div>
+        </article>
+      </section>
+
+      <section id="calendar" class="calendar">
+        <header class="calendar__header">
+          <h2>Your calendar</h2>
+          <p>See everything you have reserved. Click any date to review its classes.</p>
+          <div>
+            <button id="calendarPrev" aria-label="Previous month">‹</button>
+            <span id="calendarLabel"></span>
+            <button id="calendarNext" aria-label="Next month">›</button>
+          </div>
+        </header>
+        <div class="calendar__grid" role="grid"></div>
+        <div class="calendar__details" aria-live="polite"></div>
+      </section>
+
+      <section id="gallery" class="gallery">
+        <header>
+          <h2>Studio gallery</h2>
+          <p>Peek into our spaces, performances, and rooftop socials.</p>
+        </header>
+        <div class="gallery__grid" aria-live="polite"></div>
+      </section>
+
+      <section id="events" class="events">
+        <header>
+          <h2>Events &amp; community nights</h2>
+          <p>Workshops, social nights, and showcases with limited capacity.</p>
+        </header>
+        <div class="events__list" aria-live="polite"></div>
+      </section>
+
+      <section id="contact" class="contact">
+        <header>
+          <h2>Contact &amp; Visit</h2>
+          <p>1100 Hudson Ave, Suite 4C · hello@pulsemotion.com · (917) 111-2233</p>
+        </header>
+        <div class="contact__content">
+          <form class="contact__form" aria-label="Contact form">
+            <label class="form-control">
+              <span>Your name</span>
+              <input type="text" placeholder="Full name" required />
+            </label>
+            <label class="form-control">
+              <span>Email</span>
+              <input type="email" placeholder="name@email.com" required />
+            </label>
+            <label class="form-control">
+              <span>Message</span>
+              <textarea placeholder="How can we help?" required></textarea>
+            </label>
+            <button type="submit" class="button">Send</button>
+          </form>
+          <div class="contact__map" aria-label="Map with studio location">
+            <iframe
+              title="Pulse Motion on Google Maps"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.9382176523567!2d-73.99733222321836!3d40.73257173765738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25990c719c6b7%3A0xddd0cf6e8adb409!2sPeridance%20Center!5e0!3m2!1sen!2sus!4v1689546001323!5m2!1sen!2sus"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Pulse Motion Dance Studio. Crafted with accessibility and love.</p>
+      <div class="footer__links">
+        <a href="#privacy">Privacy</a>
+        <a href="#terms">Terms</a>
+      </div>
+    </footer>
+
+    <template id="classCardTemplate">
+      <article class="class-card">
+        <div class="class-card__media">
+          <img src="" alt="" loading="lazy" />
+        </div>
+        <div class="class-card__body">
+          <header>
+            <h3></h3>
+            <p class="class-card__meta"></p>
+          </header>
+          <p class="class-card__location"></p>
+          <p class="class-card__seats"></p>
+          <button class="button class-card__cta">Enroll</button>
+        </div>
+      </article>
+    </template>
+
+    <template id="eventTemplate">
+      <article class="event-card">
+        <header>
+          <h3></h3>
+          <p class="event-card__date"></p>
+        </header>
+        <p class="event-card__description"></p>
+        <p class="event-card__seats"></p>
+        <button class="button event-card__cta">Reserve</button>
+      </article>
+    </template>
+
+    <section class="notice" id="notice" hidden aria-live="assertive"></section>
+
+    <script src="scripts/app.js" type="module"></script>
+  </body>
+</html>
